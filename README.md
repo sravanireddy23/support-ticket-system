@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # 🚀 Support Ticket System  
 Tech Intern Assessment Submission
 
@@ -55,7 +53,7 @@ POST /api/tickets/classify/
 2. Backend sends a structured prompt to the LLM.
 
 3. LLM returns:
-```json
+json
 {
   "suggested_category": "technical",
   "suggested_priority": "high"
@@ -235,8 +233,8 @@ Sravani Reddy Gavinolla
 
 After pasting in VS Code:
 
-```bash
+bash
 git add README.md
 git commit -m "Add README for assessment"
 git push origin main
->>>>>>> 799ba17 (Add README for assessment)
+
