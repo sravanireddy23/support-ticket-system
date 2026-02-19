@@ -1,8 +1,7 @@
-
 # 🚀 Support Ticket System  
-Tech Intern Assessment Submission
+**Tech Intern Assessment Submission**
 
-A full-stack Support Ticket System built using Django, React, PostgreSQL, and LLM integration.  
+A full-stack Support Ticket System built using **Django, React, PostgreSQL, and LLM integration**.  
 This project demonstrates backend architecture, AI integration, database aggregation, and Dockerized deployment.
 
 ---
@@ -20,40 +19,41 @@ Build a Support Ticket System from scratch where:
 
 ---
 
-# 🏗️ Tech Stack
+## 🏗️ Tech Stack
 
-## Backend
+### Backend
 - Django
 - Django REST Framework
 - PostgreSQL
-- Django ORM (aggregate & annotate)
+- Django ORM (`aggregate()` & `annotate()`)
 
-## Frontend
+### Frontend
 - React (Vite)
 - Fetch API
 
-## AI Integration
+### AI Integration
 - External LLM API (OpenAI / Anthropic / Google etc.)
 - API key configured via environment variable
 
-## Infrastructure
+### Infrastructure
 - Docker
 - Docker Compose
 
 ---
 
-# 🧠 LLM Integration (Core Feature)
+## 🧠 LLM Integration (Core Feature)
 
 When a user writes a ticket description:
 
 1. Frontend calls:
-POST /api/tickets/classify/
 
+POST /api/tickets/classify/
 
 2. Backend sends a structured prompt to the LLM.
 
 3. LLM returns:
-json
+
+```json
 {
   "suggested_category": "technical",
   "suggested_priority": "high"
@@ -73,13 +73,16 @@ Structured JSON parsing for reliability
 
 🗂️ Database Model
 Ticket Model
-Field	Type	Constraints
-title	CharField	max_length=200, required
-description	TextField	required
-category	CharField	billing, technical, account, general
-priority	CharField	low, medium, high, critical
-status	CharField	open, in_progress, resolved, closed (default=open)
-created_at	DateTimeField	auto-set on creation
+
+| Field       | Type          | Constraints                                        |
+| ----------- | ------------- | -------------------------------------------------- |
+| title       | CharField     | max_length=200, required                           |
+| description | TextField     | required                                           |
+| category    | CharField     | billing, technical, account, general               |
+| priority    | CharField     | low, medium, high, critical                        |
+| status      | CharField     | open, in_progress, resolved, closed (default=open) |
+| created_at  | DateTimeField | auto-set on creation                               |
+
 All constraints are enforced at the database level.
 
 🔌 API Endpoints
@@ -109,7 +112,8 @@ Overriding priority
 
 Ticket Statistics
 GET /api/tickets/stats/
-Example Response
+Example Response:
+
 {
   "total_tickets": 124,
   "open_tickets": 67,
@@ -127,12 +131,13 @@ Example Response
     "general": 19
   }
 }
-Important
+Important:
+
 Implemented using Django ORM aggregate() and annotate()
 
 No Python-level loops
 
-Uses database-level aggregation (key evaluation requirement)
+Uses database-level aggregation
 
 💻 Frontend Features
 Submit Ticket
@@ -226,15 +231,3 @@ Assessment-compliant implementation
 
 👩‍💻 Author
 Sravani Reddy Gavinolla
-
-
-
----
-
-After pasting in VS Code:
-
-bash
-git add README.md
-git commit -m "Add README for assessment"
-git push origin main
-
