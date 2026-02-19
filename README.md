@@ -1,5 +1,4 @@
 # 🚀 Support Ticket System
-**Tech Intern Assessment Submission**
 
 A full-stack Support Ticket System built using **Django, React, PostgreSQL, and LLM integration**.  
 This project demonstrates backend architecture, AI integration, database aggregation, and Dockerized deployment.
