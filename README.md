@@ -5,7 +5,7 @@ This project demonstrates backend architecture, AI integration, database aggrega
 
 ---
 
-## 📌 Assessment Objective
+## 📌Project Objective
 
 Build a Support Ticket System from scratch where:
 
